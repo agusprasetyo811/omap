@@ -1,0 +1,49 @@
+/* Fonts -------------------------------- */
+.font_all {
+	font-family:Verdana, Geneva, sans-serif;
+}
+.font_white {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	text-shadow: 0 1px 1px #000;
+}
+.font_12 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+/* Layout ------------------------------- */
+#layout_all{
+	background:url(../images/bg_layout.jpg);
+}
+#layout_base{
+	width:600px;
+	border:1px solid #999;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:auto;
+	background:#FFF;
+	-moz-box-shadow: 0px 2px 5px #999;
+	-webkit-box-shadow: 0px 2px 5px #999;
+}
+#layout_header{
+	border-bottom:1px solid #999;
+	padding:10px;
+	width:580px;
+	margin:auto;
+	font-size:24px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#bab5b5));
+	background: -moz-linear-gradient(top, #bab5b5, #353535);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#bab5b5');
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#bab5b5');
+}
+#layout_content{
+	padding:10px;
+	width:580px;
+	margin:auto;
+}
+#layout_footer{
+	padding:10px;
+	width:580px;
+	margin:auto;
+	border-top:1px #999 solid;
+}
