@@ -39,7 +39,7 @@ di upload di server maka tinggal di ganti site_urlnya. Sample di sini websites
 di load di localhost jdi penulisanya http://localhost/omap/. Contoh Pemanggilan site_url 
 di template {SITE_URL} */
 
-$_CONFIG['site_url'] = "http://localhost/omap.v.0.3/";
+$_CONFIG['site_url'] = "http://agus.agus/omap/";
 
 /* ---------------------------------------------------------------------------------------
 Style Url Websites merupakan link yang dipakai untuk stylesheet. Penulisan di template 
