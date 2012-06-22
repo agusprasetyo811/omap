@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<project name="omap" default="build" basedir=".">
+
+	<property file="development.properties" />
+	
+	<target name="remote.compile">
+		<copy todir="${omap.local.dir}" overwrite="true">
+			<fileset dir="${tpl.js.dir}">
+				<exclude name="*" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="build">
+		<javac srcdir="." />
+	</target>
+</project>
