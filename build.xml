@@ -3,13 +3,32 @@
 <project name="omap" default="build" basedir=".">
 
 	<property file="development.properties" />
-	
+	<property name="omap.path.dir" value="${omap.local.dir}${omap.name.dir}" />
+	<property name="omap.controller.dir" value="controller" />
+	<property name="omap.pages.dir" value="pages" />
+	<property name="omap.system.dir" value="system" />
+	<property name="omap.templates.dir" value="templates" />
+
 	<target name="remote.compile">
-		<copy todir="${omap.local.dir}" overwrite="true">
-			<fileset dir="${tpl.js.dir}">
-				<exclude name="*" />
-			</fileset>
+		<mkdir dir="${omap.path.dir}" />
+		<mkdir dir="${omap.path.dir}/controller" />
+		<mkdir dir="${omap.path.dir}/pages" />
+		<mkdir dir="${omap.path.dir}/system" />
+		<mkdir dir="${omap.path.dir}/templates" />
+
+		<copy todir="${omap.path.dir}/controller" overwrite="true">
+			<fileset dir="${omap.controller.dir}" />
 		</copy>
+		<copy todir="${omap.path.dir}/pages" overwrite="true">
+			<fileset dir="${omap.pages.dir}" />
+		</copy>
+		<copy todir="${omap.path.dir}/system" overwrite="true">
+			<fileset dir="${omap.system.dir}" />
+		</copy>
+		<copy todir="${omap.path.dir}/templates" overwrite="true">
+			<fileset dir="${omap.templates.dir}" />
+		</copy>
+		<copy todir="${omap.path.dir}" file="index.php" overwrite="true"></copy>
 	</target>
 
 	<target name="build">
