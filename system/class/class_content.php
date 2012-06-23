@@ -50,15 +50,18 @@ class Content {
 		$date = new Date();
 		$cek = new Validate();
 		
-		$key_index = array_keys($key);
+		//$key_index = array_keys($key);
 		$count = count($key);
+		
+		foreach ($key as $keys) {
+			echo $keys;
+		}
 				
 		for($obj=0;$obj<$count;$obj++){
 			ob_start(); 
 			@include ($key[$key_index[$obj]] . '.php');
 			$VAR[$key_index[$obj]] = ob_get_contents();
 			ob_end_clean();
-			ob_start();
 		}
 		
 		ob_start();  
