@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{TITLE_SITE}</title>
+<title><!-- {TITLE_SITE} --></title>
 <link href="{STYLE_URL}css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="font_all" id="layout_all">
 <div id="layout_base">
 	<div id="layout_header" class="font_white" align="center">
-    	{NAME_SITE}
+    	<!-- {NAME_SITE} -->
     </div>
 	<div id="layout_content">
     	{BODY_CENTER}
